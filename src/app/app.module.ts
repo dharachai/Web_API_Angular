@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ContentComponent } from './content/content.component';
@@ -10,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { PositionsComponent } from './positions/positions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PositionService} from './data/position.service';
+import { EmployeeService} from './data/employee.service';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,18 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     HomeComponent,
     EmployeesComponent,
     PositionsComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PositionService,
+    EmployeeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

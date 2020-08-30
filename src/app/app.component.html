@@ -7,26 +7,19 @@
       <a class="navbar-brand" href="index.html"><i class="fa fa-folder-open"></i> API Demo</a></div>
       <div class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">Employees</a></li>
-          <li><a href="#">Positions</a></li>
-
+          <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+          <li routerLinkActive="active"><a routerLink="/employees">Employees</a></li>
+          <li routerLinkActive="active"><a routerLink="/positions">Positions</a></li>
         </ul>
       </div>
     </div>
-    <!--/.container--> 
   </nav>
-  <!--/nav--> 
-  
 </header>
-<!--/header-->
 
 <div class="color-border"> </div>
-<!-- <div>Hello world</div> -->
-<!--/#get-started-->
-<app-nav></app-nav>
+<!-- <app-nav></app-nav> -->
 <app-content></app-content>
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
 
 <div class="color-border"> </div>
 <footer id="footer">
