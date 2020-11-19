@@ -14,11 +14,11 @@ export class PositionService {
     return this.http.get<Position[]>("https://intense-peak-17143.herokuapp.com/positions");
   }
 
-  getPosition(id : string) : Observable<Position[]>{
+  getPosition(id) : Observable<Position[]>{
    return this.http.get<Position[]>("https://intense-peak-17143.herokuapp.com/position/"+id);
   }
   
-  savePosition(position : Position){
+  savePosition(position : Position): Observable<any>{
     return this.http.put<any>("https://intense-peak-17143.herokuapp.com/position/"+position._id, position);
   }
 }

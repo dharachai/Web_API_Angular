@@ -13,6 +13,8 @@ import { PositionsComponent } from './positions/positions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PositionService} from './data/position.service';
 import { EmployeeService} from './data/employee.service';
+import { EmployeeComponent } from './employee/employee.component';
+import { PositionComponent } from './position/position.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { EmployeeService} from './data/employee.service';
     EmployeesComponent,
     PositionsComponent,
     PagenotfoundComponent,
+    EmployeeComponent,
+    PositionComponent,
     
   ],
   imports: [
