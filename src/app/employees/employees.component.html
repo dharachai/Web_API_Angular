@@ -20,6 +20,7 @@
             </tr>
           </thead>
           <tbody>
+            <!-- binding a "click" event to the <tr> element that has *ngFor directive.  It will invoke the routeEmployee() method and pass in the value of the current employee's _id value -->
             <tr *ngFor="let employee of filteredEmployees" (click)="routeEmployee(employee._id)">
               <td>{{employee.FirstName + " " + employee.LastName}}</td>
               <td>{{employee.AddressStreet + ". " + employee.AddressState + ", " + employee.AddressCity + ". " + employee.AddressZip}}</td>
